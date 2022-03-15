@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faList, faPen, faRotateLeft } from "@fortawesome/free-solid-svg-icons"
 
 import Footer from "./Footer"
+import Helmet from "react-helmet"
+import config from "../utils/config"
 
 const Layout = ({ children }) => {
   const [edit, setEdit] = useState(false)
@@ -14,6 +16,9 @@ const Layout = ({ children }) => {
   }
   return (
     <>
+    <Helmet>
+        <link rel="icon" type="image/x-icon" href={config.siteLogo} />
+    </Helmet>
       <nav class="navbar">
         <div class="navbar__logo">
           <Link to="/" class="navbar__logo-title">
