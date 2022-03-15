@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Seo from "../components/SEO"
 
 const hireme = () => {
   const me = {
@@ -42,34 +43,37 @@ const hireme = () => {
     },
   }
   return (
-    <Layout>
-      <h1>{`${me.firstName} ${me.lastName}`}</h1>
-      <p className="mb-2">{me.summary}</p>
-      <h2>Selected experience</h2>
-      {me.experience.map((exp, index) => {
-        return (
-          <>
-            <h3>{`${index + 1} ${exp.title}`}</h3>
-            <sub>{exp.profile}</sub>
-            <ul>
-              {exp.keyLearnings.map(key => (
-                <li>{key}</li>
-              ))}
-            </ul>
-            <br />
-          </>
-        )
-      })}
-      <h2>Contact me @</h2>
-      <ul>
-        <li>📍 {me.contact.place}</li>
-        <li>✉️ {me.contact.email}</li>
-        <li>🌍 {me.contact.web}</li>
-        <li>
-          🖇 <a href={me.contact.linkedIn}>Click me</a>
-        </li>
-      </ul>
-    </Layout>
+    <>
+      <Seo page={"Hire me"} />
+      <Layout>
+        <h1>{`${me.firstName} ${me.lastName}`}</h1>
+        <p className="mb-2">{me.summary}</p>
+        <h2>Selected experience</h2>
+        {me.experience.map((exp, index) => {
+          return (
+            <>
+              <h3>{`${index + 1} ${exp.title}`}</h3>
+              <sub>{exp.profile}</sub>
+              <ul>
+                {exp.keyLearnings.map(key => (
+                  <li>{key}</li>
+                ))}
+              </ul>
+              <br />
+            </>
+          )
+        })}
+        <h2>Contact me @</h2>
+        <ul>
+          <li>📍 {me.contact.place}</li>
+          <li>✉️ {me.contact.email}</li>
+          <li>🌍 {me.contact.web}</li>
+          <li>
+            🖇 <a href={me.contact.linkedIn}>Click me</a>
+          </li>
+        </ul>
+      </Layout>
+    </>
   )
 }
 

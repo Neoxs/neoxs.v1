@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Helmet from "react-helmet"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faList, faPen, faRotateLeft } from "@fortawesome/free-solid-svg-icons"
@@ -15,9 +14,6 @@ const Layout = ({ children }) => {
   }
   return (
     <>
-      <Helmet>
-        <title>Neoxs</title>
-      </Helmet>
       <nav class="navbar">
         <div class="navbar__logo">
           <Link to="/" class="navbar__logo-title">
