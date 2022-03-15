@@ -4,9 +4,10 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faList, faPen, faRotateLeft } from "@fortawesome/free-solid-svg-icons"
 
+import favicon from "../assets/floppy-disk.png"
+
 import Footer from "./Footer"
 import Helmet from "react-helmet"
-import config from "../utils/config"
 
 import "../styles/main.css"
 
@@ -18,9 +19,9 @@ const Layout = ({ children }) => {
   }
   return (
     <>
-    <Helmet>
-        <link rel="icon" type="image/x-icon" href={config.siteUrl + config.siteLogo} />
-    </Helmet>
+      <Helmet>
+        <link rel="shortcut icon" type="image/png" href={favicon} />
+      </Helmet>
       <nav class="navbar">
         <div class="navbar__logo">
           <Link to="/" class="navbar__logo-title">
@@ -48,7 +49,13 @@ const Layout = ({ children }) => {
               if (e.key === "e") handleEdit()
             }}
           >
-            {!edit ? <FontAwesomeIcon icon={faPen} /> : <><FontAwesomeIcon icon={faRotateLeft} /> Cancel changes</>}
+            {!edit ? (
+              <FontAwesomeIcon icon={faPen} />
+            ) : (
+              <>
+                <FontAwesomeIcon icon={faRotateLeft} /> Cancel changes
+              </>
+            )}
           </div>
         </div>
         <div class="readme__body">
