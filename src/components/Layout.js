@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
     <Helmet>
-        <link rel="icon" type="image/x-icon" href={config.siteLogo} />
+        <link rel="icon" type="image/x-icon" href={config.siteUrl + config.siteLogo} />
     </Helmet>
       <nav class="navbar">
         <div class="navbar__logo">
