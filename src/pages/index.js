@@ -7,7 +7,7 @@ const index = () => {
     <>
       <Seo />
       <Layout>
-        <h1>Hi, I'm Yaicne 👋</h1>
+        <h1>Hi, I'm Yacine 👋</h1>
         <p>
           I am a self-taught web developer who believes in and demonstrates the
           striving for excellence. I love spending my time learning new stuff
