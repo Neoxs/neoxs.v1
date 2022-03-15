@@ -1,0 +1,169 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary: #c9d1d9;
+  --secondary: #0d1117;
+  --link-color: #58a6ff;
+}
+
+/* BASE STYLE */
+body {
+  min-height: 90vh;
+  padding: 0 24px;
+  background-color: #0d1117;
+  font-family: "Roboto";
+  color: #c9d1d9;
+}
+@media (max-width: 550px) {
+  body {
+    padding: 0;
+    margin: 8px 0;
+  }
+}
+
+/* MAIN NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+.navbar__logo a {
+  font-weight: 700;
+  color: #c9d1d9;
+  text-decoration: none;
+}
+
+.navbar__btn a {
+  color: #c9d1d9;
+  text-decoration: none;
+}
+.navbar__btn a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTAINER */
+.readme {
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+
+@media (max-width: 550px) {
+    .readme {
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #30363d;
+        border-bottom: 1px solid #30363d;
+    }
+}
+
+.readme__header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.readme__cta {
+  cursor: pointer;
+}
+
+.readme__cta:hover {
+  color: #58a6ff;
+}
+
+/* HEADER STYLE */
+.readme .readme__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  gap: 15px;
+}
+
+/* BODY STYLE */
+.readme__body {
+  padding: 1.4em 6em;
+}
+
+@media (max-width: 550px) {
+    .readme__body {
+        padding: 1.2em 2.5em;
+    }
+}
+
+.readme__article h1 {
+  margin: 0;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  font-weight: 500;
+  border-bottom: 1px solid #30363d;
+}
+
+.readme__article p {
+  line-height: 1.5em;
+}
+
+.readme__article a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.readme__article a:hover {
+  text-decoration: underline;
+}
+
+.readme__article h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-bottom: 1px solid #30363d;
+}
+
+.readme__article li + li {
+  margin-top: 0.5em;
+}
+
+.readme__article h3 {
+  margin-bottom: 0;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.footer img {
+  display: inline-block;
+  max-height: 20px;
+  width: auto;
+}
+
+.footer nav {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0 1rem;
+}
+
+.footer a,
+.footer span {
+  display: flex;
+  align-items: center;
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  padding: 0 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
