@@ -7,7 +7,7 @@ const hireme = () => {
     firstName: "Mohamed Yacine",
     lastName: "ABDELKADER-KHAROUBI",
     summary:
-      "I am a self-taught web developer that beliefs in and demonstrate the striving for excellence. I love spending my time learning new stuff and building quality softwares.",
+      "I am a self-taught web developer who believes in and demonstrates the striving for excellence. I love spending my time learning new stuff and building quality software.",
     experience: [
       {
         title: "PORSAY",
