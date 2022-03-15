@@ -8,6 +8,8 @@ import Footer from "./Footer"
 import Helmet from "react-helmet"
 import config from "../utils/config"
 
+import "../styles/main.css"
+
 const Layout = ({ children }) => {
   const [edit, setEdit] = useState(false)
 

@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/SEO"
-import "../styles/main.css"
 
 const index = () => {
   return (
